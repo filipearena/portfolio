@@ -1,17 +1,12 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
     "site": "filipearena",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "redirects": []
   }
 }
