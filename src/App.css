@@ -3,6 +3,8 @@
   /* background-color: #282c34; */
 }
 
+
+
 html,
 body,
 #app,
@@ -11,11 +13,15 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .title {
+      font-size:30px;
+  }
+  .suggestion {
+    font-size:20px;
   }
 }
 
@@ -40,67 +46,54 @@ h2 {
   font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  margin: 0 0.5em;
+  /* line-height: 40px; */
+  float: 'right';
+  margin-top: 5px;
+  /* vertical-align: middle; */
 }
 
-/* Animate the homepage title and subtitle */
-.title {
-  margin: 0 0 0 -250px;
-  transition: margin 1.1s;
-  transition: color 2s, margin 1.1s;
-  color: rgba(0, 0, 0, 0);
+.navbar {
+  background-image: "linear-gradient(#fff, #bbb)"; 
+  height: '60px';
+  line-height: '60px';
 }
 
-.title.shown {
-  margin: 0;
-  color: rgba(255, 255, 255, 1);
+.title{
+  opacity: 0;
+  transition: opacity 0.8s;
 }
 
-.subTitle {
-  margin: 0 0 0 -500px;
-  transition: color 1.9s, margin 1.9s;
-  color: rgba(0, 0, 0, 0);
-}
-
-.subTitle.shown {
-  margin: 0;
+.title.is-visible{
+  opacity: 1;
   color: rgba(255, 255, 255, 1);
 }
 
 .suggestion {
-  margin: 0 0 -1000px 0;
-  color: rgba(0, 0, 0, 0);
-  transition: color 1.6s, margin 1.6s;
+  opacity: 0;
+  transition: opacity 1.1s;
 }
 
-.suggestion.shown {
+.suggestion.is-visible {
+  opacity: 1;
   color: rgba(255, 255, 255, 1);
-  margin: 0;
 }
 
-#stocks-table .ag-row {
-  cursor: pointer;
-  background-color: #fff;
+.flex-container{
+  padding-top: 50px;
+  width: 80%;
+  /* min-height: 200px; */
+  margin: 0 auto;
+  display: -webkit-flex;   
+  display: flex;
 }
 
-.ag-cell:focus{
-  border:none !important;
-  outline: none;
+.inner-flex-container {
+  width: 100%;
+  display: -webkit-flex;   
+  display: flex;
 }
 
-.ag-cell{
-  border:none !important;
-  outline: none;
-}
 
-#stocks-table .ag-row:hover{
-  transition: color 0.3s, background-color 0.3s;
-  background-color: #222;
-  color: white
-}
+
