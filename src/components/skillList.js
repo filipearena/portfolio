@@ -5,7 +5,7 @@ import Skill from "./skill"
 
 export default function SkillList() {
   return (
-    <div className="box-2" style={{ padding: '10px', border: '1px solid #000' }}>
+    <div className="box-2" style={{ border: '1px solid #000' }}>
       <Skill skillName='Javascript' percentage='90'></Skill>
       <Skill skillName='HTML' percentage='80'></Skill>
       <Skill skillName='CSS' percentage='60'></Skill>

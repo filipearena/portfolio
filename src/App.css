@@ -16,6 +16,7 @@ body,
   scroll-behavior: smooth;
 }
 
+/* Mobile */
 @media (max-width: 568px) {
   .title {
       font-size:30px;
@@ -26,6 +27,29 @@ body,
   .navbar {
     justify-content: center !important;
     padding-left: 0px !important;
+  }
+  .flex-container{
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  .box-1 {
+    width: 100%;
+  }
+  .section-3 {
+    padding: 20px !important;
+  }
+  
+  .box-2 {
+    width: 100%;
+  }
+
+  .inner-box-skill {
+    flex:2;
+  }
+  
+  .inner-box-progress-bar {
+    flex: 3;
   }
 }
 

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Skill({ skillName, percentage }) {
   return (
-    <div className="inner-container" style={{ padding: '10px', border: '1px solid #000' }}>
+    <div className="inner-container" style={{ border: '1px solid #000' }}>
       <span className="inner-box-skill" style={{ display: 'block', width: '15%' }}>{skillName}</span>
       <div className="inner-box-progress-bar" >
         <div style={{
