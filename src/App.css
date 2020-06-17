@@ -35,13 +35,20 @@ body,
   }
   .box-1 {
     width: 100%;
+    flex: 2;
   }
   .section-3 {
     padding: 20px !important;
   }
+
+  .inner-container {
+    max-height: 50px;
+  }
   
   .box-2 {
     width: 100%;
+    min-height: 40vh !important;
+    flex: none !important;
   }
 
   .inner-box-skill {
@@ -99,7 +106,6 @@ h2 {
 
 .navbar {
   z-index: 10;
-  padding-left: 30px;
   position: fixed;
   width: 100%;
   display: flex;
@@ -128,7 +134,7 @@ h2 {
   border-radius: 0 !important;
   align-items: center;
   background-image: "linear-gradient(#fff, #bbb)"; 
-  height: 50px;
+  height: 60px;
 }
 
 
@@ -182,7 +188,7 @@ h2 {
 .section-3 {
     height: 80vh;
     background-color: #101034;
-    padding: 0px 30px;
+    padding: 0px 80px;
 }
 
 .flex-container{
@@ -201,7 +207,7 @@ h2 {
   /* padding: 0  */
   flex-direction: column;
   min-height: 60vh;
-  flex: 3;
+  flex: 2;
 }
 
 .inner-container {

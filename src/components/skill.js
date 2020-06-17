@@ -1,17 +1,17 @@
 import React from "react";
 // import ScrollToSection from "../components/scrollToSection";
 
-export default function Skill({ skillName, percentage }) {
+export default function Skill({ skillName, percentage, color }) {
   return (
-    <div className="inner-container" style={{ border: '1px solid #000' }}>
+    <div className="inner-container">
       <span className="inner-box-skill">{skillName}</span>
       <div className="inner-box-progress-bar" >
         <div style={{
-          display: 'block', height: '20px', width: `${percentage}%`, backgroundColor: 'red'
+          display: 'block', height: '20px', width: `${percentage}%`, backgroundColor: `${color}`
         }}>{percentage}%</div>
         <div
           style={{
-            display: 'block', height: '20px', width: `${100 - percentage}%`, backgroundColor: 'grey'
+            display: 'block', height: '20px', width: `${100 - percentage}%`, backgroundColor: 'rgba(0, 0, 0, 0.4)'
           }}></div>
       </div>
     </div >
