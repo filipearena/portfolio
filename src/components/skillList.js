@@ -6,7 +6,7 @@ import Skill from "./skill"
 export default function SkillList() {
   return (
     <div className="box-2">
-      <Skill skillName='Javascript' percentage='90' color='blue'></Skill>
+      <Skill skillName='JavaScript' percentage='90' color='blue'></Skill>
       <Skill skillName='HTML' percentage='80' color='red'></Skill>
       <Skill skillName='CSS' percentage='60' color='green'></Skill>
       <Skill skillName='NodeJS' percentage='50' color='grey'></Skill>

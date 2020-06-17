@@ -104,6 +104,16 @@ h2 {
   transform: scale(1.3);
 }
 
+.icon-resume {
+  margin: 1em;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-resume:hover {
+  transform: scale(1.3);
+}
+
 .navbar {
   z-index: 10;
   position: fixed;
@@ -208,6 +218,11 @@ h2 {
   flex-direction: column;
   min-height: 60vh;
   flex: 2;
+}
+
+.box-3 {
+  margin-top: 20px;
+  width: 100%;
 }
 
 .inner-container {
