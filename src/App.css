@@ -10,6 +10,33 @@ body,
 #app,
 #root,
 .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 568px) {
+  .title {
+      font-size:30px;
+  }
+  .suggestion {
+    font-size:20px;
+  }
+  .navbar {
+    justify-content: center !important;
+    padding-left: 0px !important;
+  }
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; 
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  background: #222;
+  color: #fff;
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -19,23 +46,6 @@ body,
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-
-@media (max-width: 768px) {
-  .title {
-      font-size:30px;
-  }
-  .suggestion {
-    font-size:20px;
-  }
-}
-
-html,
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  background: #222;
-  color: #fff;
 }
 
 h1,
@@ -62,6 +72,7 @@ h2 {
 }
 
 .navbar {
+  z-index: 10;
   padding-left: 30px;
   position: fixed;
   width: 100%;

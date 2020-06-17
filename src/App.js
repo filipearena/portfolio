@@ -16,13 +16,23 @@ function App() {
     activeSection: 1,
   });
 
-  function isElementEntirelyInViewport(el) {
-    var rect = el.getBoundingClientRect();
+  const isElementEntirelyInViewport = (el) => {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+
+    while (el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      top >= window.pageYOffset &&
+      left >= window.pageXOffset &&
+      (top + height) <= (window.pageYOffset + window.innerHeight) &&
+      (left + width) <= (window.pageXOffset + window.innerWidth)
     );
   }
 
@@ -33,12 +43,15 @@ function App() {
     const sectionTwo = document.getElementById('2');
     const sectionThree = document.getElementById('3');
     if (isElementEntirelyInViewport(sectionOne)) {
+      // alert('section one in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 1 }))
     }
     if (isElementEntirelyInViewport(sectionTwo)) {
+      // alert('section two in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 2 }))
     }
     if (isElementEntirelyInViewport(sectionThree)) {
+      // alert('section three in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 3 }))
     }
     scroll(loop);
