@@ -1,42 +1,63 @@
 import React, { useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Tabs, Tab, Paper } from "@material-ui/core";
 import {
   Route,
-  Link,
   BrowserRouter,
   Switch,
-  useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
+import NavBar from "./components/navBar"
+import Footer from "./components/footer";
 
-import { FaFacebook, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+
 
 function App() {
-  const [value, setValue] = React.useState(0);
-  let location = useLocation();
+  const [state, setState] = React.useState({
+    activeSection: 1,
+  });
+
+  function isElementEntirelyInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  let scroll = window.requestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60) }
+
+  const loop = () => {
+    const sectionOne = document.getElementById('1');
+    const sectionTwo = document.getElementById('2');
+    const sectionThree = document.getElementById('3');
+    if (isElementEntirelyInViewport(sectionOne)) {
+      setState((oldState) => ({ ...oldState, activeSection: 1 }))
+    }
+    if (isElementEntirelyInViewport(sectionTwo)) {
+      setState((oldState) => ({ ...oldState, activeSection: 2 }))
+    }
+    if (isElementEntirelyInViewport(sectionThree)) {
+      setState((oldState) => ({ ...oldState, activeSection: 3 }))
+    }
+    scroll(loop);
+  }
 
   useEffect(() => {
-    if (location.pathname !== "/") {
-      setValue(1);
-    }
-  }, [location.pathname]);
+    loop()
+  }, []);
 
   return (
     <div className="App">
       <BrowserRouter>
         <div>
-          <Paper className="navbar" id="navbar">
-            <FaLinkedin className="icon" size={'2em'} />
-            <FaFacebook className="icon" size={'2em'} />
-            <FaGithub className="icon" size={'2em'} />
-            <FaEnvelope className="icon" size={'2em'} />
-          </Paper>
+          <NavBar activeSection={state.activeSection}></NavBar>
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

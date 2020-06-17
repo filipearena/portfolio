@@ -37,6 +37,8 @@ export default function Home() {
     scroll(loop);
   }
 
+
+
   const isElementInViewPort = (el) => {
     const rect = el.getBoundingClientRect();
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
