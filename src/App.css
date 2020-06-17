@@ -101,7 +101,7 @@ h2 {
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   border-radius: 0 !important;
   align-items: center;
   background-image: "linear-gradient(#fff, #bbb)"; 
