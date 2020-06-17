@@ -45,11 +45,13 @@ body,
   }
 
   .inner-box-skill {
+    font-size: 12px !important;
     flex:2;
   }
   
   .inner-box-progress-bar {
-    flex: 3;
+    display: flex;
+    flex: 2;
   }
 }
 
@@ -109,7 +111,7 @@ h2 {
 }
 
 .link {
-  color: #000;
+  color: #bbb;
   cursor: pointer;
   transition: color 0.8s;
   margin: 0 0.5em;
@@ -117,7 +119,7 @@ h2 {
 
 .link.active {
   transform: scale(1.2);
-  color: #bbb;
+  color: #000;
 }
 
 .footer {
@@ -195,20 +197,27 @@ h2 {
 }
 
 .box-2 {
-  /* max-width: 500px; */
+  display: flex;
+  /* padding: 0  */
+  flex-direction: column;
+  min-height: 60vh;
   flex: 3;
 }
 
 .inner-container {
   display: flex;
+  flex:2;
+  align-items: center;
 }
 
 .inner-box-skill {
+  font-size: 20px;
   flex:1;
 }
 
 .inner-box-progress-bar {
   flex: 5;
+  display: flex;
 }
 
 
