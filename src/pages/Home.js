@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import Section1 from "../components/section1"
 import Section2 from "../components/section2"
 import Section3 from "../components/section3"
-import ScrollToSection from "../components/scrollToSection";
 
 export default function Home() {
   const [state, setState] = useState({
-    elementToScrollTo: 2
+    // elementToScrollTo: 2
   });
 
   let scroll = window.requestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60) }
 
   const loop = () => {
-    const elementsToShow = document.querySelectorAll('.show-on-scroll')
+    const elementsToShow = document.querySelectorAll('.show-on-scroll');
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
     elementsToShow.forEach(function (element) {
       if (isElementInViewPort(element)) {
         element.classList.add('is-visible')
@@ -20,24 +20,15 @@ export default function Home() {
         element.classList.remove('is-visible')
       }
     })
-
-    const sectionOne = document.getElementById('1');
-    const sectionTwo = document.getElementById('2');
-    // const sectionThree = document.getElementById('3');
-    if (isElementInViewPort(sectionOne)) {
-      setState((oldState) => ({ ...oldState, elementToScrollTo: 2 }))
-    }
-    if (isElementInViewPort(sectionTwo)) {
-      setState((oldState) => ({ ...oldState, elementToScrollTo: 3 }))
-    }
-    // if(isElementInViewPort(sectionThree)) {
-    //   setState((oldState) => ({ ...oldState, elementToScrollTo: 2 }))
-    // }
-
+    elementsToAnimate.forEach(function (element) {
+      if (isElementInViewPort(element)) {
+        element.classList.add('animate')
+      } else {
+        element.classList.remove('animate')
+      }
+    })
     scroll(loop);
   }
-
-
 
   const isElementInViewPort = (el) => {
     const rect = el.getBoundingClientRect();
@@ -48,9 +39,7 @@ export default function Home() {
     return (vertInView && horInView);
   }
 
-
   useEffect(() => {
-
     loop()
   }, []);
 
@@ -58,7 +47,7 @@ export default function Home() {
   return (
     <div>
       <Section1></Section1>
-      <Section2></Section2>
+      {/* <Section2></Section2> */}
       <Section3></Section3>
     </div>
   );

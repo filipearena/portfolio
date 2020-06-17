@@ -1,9 +1,9 @@
 import React from "react";
 // import ScrollToSection from "../components/scrollToSection";
 
-export default function Skill({ skillName, percentage, color }) {
+export default function Skill({ skillName, percentage, color, sequenceNumber }) {
   return (
-    <div className="inner-container">
+    <div className={`inner-container animate-on-scroll ${sequenceNumber}`}>
       <span className="inner-box-skill">{skillName}</span>
       <div className="inner-box-progress-bar" >
         <div style={{

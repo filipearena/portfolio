@@ -42,15 +42,15 @@ function App() {
     const sectionOne = document.getElementById('1');
     const sectionTwo = document.getElementById('2');
     const sectionThree = document.getElementById('3');
-    if (isElementEntirelyInViewport(sectionOne)) {
+    if (sectionOne && isElementEntirelyInViewport(sectionOne)) {
       // alert('section one in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 1 }))
     }
-    if (isElementEntirelyInViewport(sectionTwo)) {
+    if (sectionTwo && isElementEntirelyInViewport(sectionTwo)) {
       // alert('section two in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 2 }))
     }
-    if (isElementEntirelyInViewport(sectionThree)) {
+    if (sectionThree && isElementEntirelyInViewport(sectionThree)) {
       // alert('section three in viewport')
       setState((oldState) => ({ ...oldState, activeSection: 3 }))
     }

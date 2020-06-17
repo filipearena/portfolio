@@ -19,9 +19,9 @@ export default function NavBar({ activeSection }) {
 
   return (
     <Paper className="navbar" id="navbar">
-      <span onClick={() => scrollTo(1)} className={`link ${isSectionActive(1) ? "active" : ""}`}>HOME</span>
-      <span onClick={() => scrollTo(2)} className={`link ${isSectionActive(2) ? "active" : ""}`}>STORY</span>
-      <span onClick={() => scrollTo(3)} className={`link ${isSectionActive(3) ? "active" : ""}`}>SKILLS</span>
+      <span onClick={() => scrollTo(1)} className={`link ${isSectionActive(1) ? "active" : ""}`}>HI</span>
+      {/* <span onClick={() => scrollTo(2)} className={`link ${isSectionActive(2) ? "active" : ""}`}>EXPERIENCE</span> */}
+      <span onClick={() => scrollTo(3)} className={`link ${isSectionActive(3) ? "active" : ""}`}>ABOUT</span>
     </Paper>
   );
 }
