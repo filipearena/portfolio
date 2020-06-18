@@ -14,7 +14,7 @@ const mailTo = () => {
 
 export default function MediaLinks() {
   return (
-    <div className="section-1-media-links">
+    <div>
       <FaLinkedin style={{ zIndex: 100 }} className="icon" size={'2em'} onClick={() => goTo(linkedinLink)} />
       <FaFacebook style={{ zIndex: 100 }} className="icon" size={'2em'} onClick={() => goTo(facebookLink)} />
       <FaGithub className="icon" size={'2em'} onClick={() => goTo(githubLink)} />

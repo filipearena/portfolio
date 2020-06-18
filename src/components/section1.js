@@ -1,5 +1,5 @@
 import React from "react";
-import MediaLinks from "./media-links"
+import SectionOneLinks from "./sectionOneLinks"
 import Presentation from "./presentation"
 import Particles from 'react-particles-js';
 
@@ -30,7 +30,7 @@ export default function Section1() {
           }
         }} />
       <Presentation></Presentation>
-      <MediaLinks></MediaLinks>
+      <SectionOneLinks></SectionOneLinks>
     </div>
   );
 }
