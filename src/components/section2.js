@@ -74,21 +74,6 @@ export default function Section2() {
           contentStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
           dateClassName={'timeline-date'}
-          date="Late - 2017"
-          iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          icon={<FaGraduationCap />}
-        >
-          <h3 className="vertical-timeline-element-title">Computer Engineer</h3>
-          <h4 className="vertical-timeline-element-subtitle">POLI-USP, Brazil</h4>
-          <p>
-            Finished Bachelor in Computer Engineering at Polytechnic School from the University of São Paulo (POLI-USP)
-    </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
-          dateClassName={'timeline-date'}
           date="2015 - 2017"
           iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
           icon={<FaSuitcase />}
@@ -99,6 +84,22 @@ export default function Section2() {
             Front-end development with AngularJS, Unit Testing, E2E testing and more
     </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
+          dateClassName={'timeline-date'}
+          date="2010 - 2017"
+          iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
+          icon={<FaGraduationCap />}
+        >
+          <h3 className="vertical-timeline-element-title">Computer Engineer</h3>
+          <h4 className="vertical-timeline-element-subtitle">POLI-USP, Brazil</h4>
+          <p>
+            Finished Bachelor in Computer Engineering at Polytechnic School from the University of São Paulo (POLI-USP)
+    </p>
+        </VerticalTimelineElement>
+
       </VerticalTimeline>
     </div >
   );
