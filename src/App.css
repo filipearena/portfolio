@@ -125,7 +125,7 @@ h2 {
 }
 
 .section-1 {
-    height: 80vh;
+    height: 70vh;
     min-height: 80%;
     background: linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
     padding: 0 30px;
@@ -142,12 +142,12 @@ h2 {
   left: 0;
   z-index: 1;
   /* width: 100%; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* height: 90vh; */
 }
 
 .presentation {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   flex-basis: 100%;
 }
 .section-1-media-links {

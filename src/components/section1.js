@@ -10,7 +10,7 @@ export default function Section1() {
     <div id="1" className="section-1">
       <Particles
         canvasClassName="particles"
-        height="72vh"
+        height="70vh"
         params={{
           "particles": {
             "number": {

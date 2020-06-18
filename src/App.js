@@ -66,12 +66,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <div>
-          <NavBar activeSection={state.activeSection}></NavBar>
+          {/* <NavBar activeSection={state.activeSection}></NavBar> */}
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </BrowserRouter>
     </div>
   );
