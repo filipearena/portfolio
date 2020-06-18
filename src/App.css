@@ -298,8 +298,6 @@ h2 {
   }
   .box-1 {
     width: 100%;
-    /* flex: 3; */
-    /* height: 200px; */
     order: 2;
   }
 
