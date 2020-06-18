@@ -29,10 +29,8 @@ export default function Section1() {
             }
           }
         }} />
-      <div>
-        <Presentation></Presentation>
-        <MediaLinks></MediaLinks>
-      </div>
+      <Presentation></Presentation>
+      <MediaLinks></MediaLinks>
     </div>
   );
 }
