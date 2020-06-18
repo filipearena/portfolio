@@ -212,6 +212,14 @@ h2 {
 .profile-photo {
   border-radius: 60%;
   height: 220px;
+  filter: grayscale(100%);
+  transition: all 1 ease;
+  cursor: pointer;
+}
+
+.profile-photo:hover {
+  transform: scale(1.02);
+  filter: grayscale(0%);
 }
 
 .box-2 {
