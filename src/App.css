@@ -150,10 +150,12 @@ h2 {
 }
 
 .vertical-timeline-element--work p {
+  
   font-size: 15px;
 }
 
 .timeline-date {
+  text-align: start;
   color: #fff !important;
 }
 
@@ -177,13 +179,14 @@ h2 {
 }
 
 .section-2 {
+    /* text-align: start; */
     /* display: 'flex';
     justify-content: center;
     align-items: center; */
     /* height: 70vh; */
     /* min-height: 100%; */
     background: linear-gradient(180deg, rgb(63, 76, 107) 0%, rgb(0, 0, 0) 100%);
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background-color: #282c34;
     padding: 0 80px;
 }
