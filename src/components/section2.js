@@ -1,11 +1,12 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { FaBaby, FaGraduationCap, FaSuitcase, FaPlane, FaLaptop, FaBomb } from 'react-icons/fa';
+import { FaGraduationCap, FaSuitcase } from 'react-icons/fa';
 
 export default function Section2() {
   return (
     <div id="2" className="section-2">
+      <div className='timeline-start'>NOW</div>
       <VerticalTimeline className={'timeline'}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -14,7 +15,7 @@ export default function Section2() {
           date="2019 - Current"
           dateClassName={'timeline-date'}
           iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          icon={<FaBomb />}
+          icon={<FaSuitcase />}
         >
           <h3 className="vertical-timeline-element-title">Software Developer - Eante Pty</h3>
           <h4 className="vertical-timeline-element-subtitle">Brisbane, Australia</h4>
@@ -29,7 +30,7 @@ export default function Section2() {
           date="2019 - Current"
           dateClassName={'timeline-date'}
           iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          icon={<FaPlane />}
+          icon={<FaGraduationCap />}
         >
           <h3 className="vertical-timeline-element-title">Masters of Information Technology (QUT)</h3>
           <h4 className="vertical-timeline-element-subtitle">Brisbane, Australia</h4>
@@ -44,7 +45,7 @@ export default function Section2() {
           contentArrowStyle={{ borderRight: '7px solid rgb(255, 255, 255)' }}
           date="2017 - 2019"
           iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          icon={<FaLaptop />}
+          icon={<FaSuitcase />}
         >
           <h3 className="vertical-timeline-element-title">Consultant</h3>
           <h4 className="vertical-timeline-element-subtitle">Accenture, Brazil</h4>
@@ -90,7 +91,7 @@ export default function Section2() {
           dateClassName={'timeline-date'}
           date="2015 - 2017"
           iconStyle={{ background: 'rgb(255, 255, 255)', color: '#000' }}
-          icon={<FaBaby />}
+          icon={<FaSuitcase />}
         >
           <h3 className="vertical-timeline-element-title">Intern</h3>
           <h4 className="vertical-timeline-element-subtitle">Accenture, Brazil</h4>
