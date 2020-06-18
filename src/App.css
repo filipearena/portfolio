@@ -156,14 +156,14 @@ h2 {
 }
 
 .section-2 {
-    display: 'flex';
+    /* display: 'flex';
     justify-content: center;
-    align-items: center;
-    height: 70vh;
-    min-height: 100%;
+    align-items: center; */
+    /* height: 70vh; */
+    /* min-height: 100%; */
     flex-grow: 1;
     background-color: #282c34;
-    padding: 0 30px;
+    padding: 0 80px;
 }
 
 .section-3 {
