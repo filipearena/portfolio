@@ -104,22 +104,22 @@ h2 {
   height: 60px;
 }
 
-.title{
+.welcome{
   opacity: 0;
   transition: opacity 0.8s;
 }
 
-.title.is-visible{
+.welcome.is-visible{
   opacity: 1;
   color: rgba(255, 255, 255, 1);
 }
 
-.suggestion {
+.description {
   opacity: 0;
   transition: opacity 1.1s;
 }
 
-.suggestion.is-visible {
+.description.is-visible {
   opacity: 1;
   color: rgba(255, 255, 255, 1);
 }
@@ -128,7 +128,7 @@ h2 {
     height: 70vh;
     min-height: 80%;
     background: linear-gradient(180deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
-    padding: 0 30px;
+    padding: 0 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -172,6 +172,7 @@ h2 {
 }
 
 .presentation {
+  /* display:flex; */
   /* padding-top: 100px; */
   flex-basis: 100%;
 }
@@ -357,6 +358,8 @@ h2 {
 
 .timeline-date {
   color: #000 !important;
+  /* text-decoration: underline; */
+  font-weight: bolder;
 }
 
   .resume-text {
@@ -370,10 +373,10 @@ h2 {
     width: 100%
   }
 
-  .title {
+  .welcome {
       font-size:30px;
   }
-  .suggestion {
+  .description {
     font-size:20px;
   }
   .navbar {
@@ -410,7 +413,9 @@ h2 {
     /* min-height: 0vh; */
   }
 
-
+  .section-1 {
+    padding: 0 50px;
+  }
   .section-3 {
     height: auto;
     padding-top: 20px;
