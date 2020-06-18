@@ -291,7 +291,7 @@ h2 {
   .recommendation {
     font-size: 12px;
     text-align: left;
-    margin: 1em 1em;
+    margin: 1.5em 1em;
     width: 100%
   }
 
@@ -322,7 +322,7 @@ h2 {
 
   .box-2 {
     /* flex:8; */
-    width: 80%;
+    width: 100%;
     order: 1;
     /* min-height: 30vh; */
   }
