@@ -161,6 +161,7 @@ h2 {
 }
 
 .particles {
+  height: 70vh;
   position: absolute;
   top: 0;
   left: 0;

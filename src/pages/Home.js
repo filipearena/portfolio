@@ -1,31 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Section1 from "../components/section1"
 import Section2 from "../components/section2"
 import Section3 from "../components/section3"
 
 
 export default function Home() {
-  const [state, setState] = useState({
-    // elementToScrollTo: 2
-  });
-
   let scroll = window.requestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60) }
 
   const loop = () => {
     const elementsToShow = document.querySelectorAll('.show-on-scroll');
-    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
     elementsToShow.forEach(function (element) {
       if (isElementInViewPort(element)) {
         element.classList.add('is-visible')
       } else {
         element.classList.remove('is-visible')
-      }
-    })
-    elementsToAnimate.forEach(function (element) {
-      if (isElementInViewPort(element)) {
-        element.classList.add('animate')
-      } else {
-        element.classList.remove('animate')
       }
     })
     scroll(loop);
@@ -47,7 +35,6 @@ export default function Home() {
 
   return (
     <div>
-
       <Section1></Section1>
       <Section2></Section2>
       <Section3></Section3>

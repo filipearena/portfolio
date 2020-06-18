@@ -29,12 +29,10 @@ export default function Recommendations() {
     downloadURL: PDF3,
   }]
 
-
-
   return (
     <div className="box-2">
-      {recommendations.map((item) =>
-        <Recommendation text={item.description}
+      {recommendations.map((item, index) =>
+        <Recommendation key={index} text={item.description}
           author={item.author}
           position={item.position}
           download={item.downloadURL}></Recommendation>)}
