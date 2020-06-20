@@ -184,7 +184,7 @@ h2 {
 }
 .section-1-media-links {
   flex-basis: 100%;
-  top:55%;
+  top:50%;
   position: absolute;
   z-index: 2;
 }
@@ -369,6 +369,12 @@ h2 {
  
 }
 @media (max-width: 800px) {
+  .particles {
+    height: 50vh !important;
+  }
+  .section-1-media-links {
+    top:40vh;
+  }
   .resume-download {
     min-height: 4em;
   }
@@ -410,7 +416,7 @@ h2 {
       font-size:28px;
   }
   .description {
-    font-size:18px;
+    font-size:1em;
   }
   .navbar {
     justify-content: center;
@@ -447,7 +453,8 @@ h2 {
   }
 
   .section-1 {
-    padding: 0 50px;
+    height: 50vh;
+    padding: 0 30px;
   }
   .section-3 {
     height: auto;
