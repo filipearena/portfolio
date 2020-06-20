@@ -9,11 +9,18 @@ export default function Home() {
 
   const loop = () => {
     const elementsToShow = document.querySelectorAll('.show-on-scroll');
+    const elementsToAnimateOnce = document.querySelectorAll('.animate');
     elementsToShow.forEach(function (element) {
       if (isElementInViewPort(element)) {
         element.classList.add('is-visible')
       } else {
         element.classList.remove('is-visible')
+      }
+    })
+
+    elementsToAnimateOnce.forEach(function (element) {
+      if (isElementInViewPort(element)) {
+        element.classList.add('animate-once')
       }
     })
     scroll(loop);
