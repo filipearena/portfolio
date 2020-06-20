@@ -133,7 +133,7 @@ h2 {
     align-items: flex-start;
     height: 70vh;
     min-height: 80%;
-    background: linear-gradient(180deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
+    background: linear-gradient(180deg, rgb(38, 87, 115) 0%, rgb(0,85,136) 100%);
     padding: 0 150px;
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +196,7 @@ h2 {
     align-items: center; */
     /* height: 70vh; */
     /* min-height: 100%; */
-    background: linear-gradient(180deg, rgb(63, 76, 107) 0%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgb(0,85,136) 0%, rgb(0, 0, 0) 100%);
     /* flex-grow: 1; */
     background-color: #282c34;
     padding: 0 80px;
