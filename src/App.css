@@ -156,7 +156,6 @@ h2 {
 }
 
 .vertical-timeline-element--work p {
-  
   font-size: 15px;
 }
 
@@ -354,17 +353,41 @@ h2 {
   margin-right: 5px !important;
 }
 
+
 @media (max-width: 1200px) {
 
   .timeline-start{
     display: none;
   }
+  .timeline-date {
+    color: #000 !important;
+    opacity: 0.8 !important;
+  }
+  .vertical-timeline-element-date {
+    float: none !important;
+  }
+ 
 }
 @media (max-width: 800px) {
   .resume-download {
     min-height: 4em;
   }
+  .section-2 {
+    padding: 0 20px;
+  }
 
+.vertical-timeline-element--work h3 {
+  font-size: 16px;
+}
+
+
+.vertical-timeline-element--work h4 {
+  font-size: 14px;
+}
+
+.vertical-timeline-element--work p {
+  font-size: 14px;
+}
 
 .timeline-date {
   color: #000 !important;
