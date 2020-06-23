@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-const linkedinLink = "https://www.linkedin.com/in/filipe-arena-23b33991/";
+const linkedinLink = "https://www.linkedin.com/in/filipe-arena";
 const facebookLink = "https://www.facebook.com/filipe.arena";
 const githubLink = "https://github.com/filipearena";
 
