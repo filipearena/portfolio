@@ -4,7 +4,7 @@ import Presentation from "./presentation"
 import Particles from 'react-particles-js';
 
 export default function Section1() {
-  const particleHeight = '70vh';
+  // const particleHeight = '70vh';
   const particleParams = {
     "particles": {
       "number": {
@@ -28,7 +28,7 @@ export default function Section1() {
     <div id="1" className="section-1">
       <Particles
         canvasClassName="particles"
-        height={particleHeight}
+        // height={particleHeight}
         params={particleParams} />
       <Presentation></Presentation>
       <SectionOneLinks></SectionOneLinks>
