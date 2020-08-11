@@ -8,13 +8,19 @@ export default function Section2() {
   return (
     <div id="2" className="section-2">
       <div className='timeline-start'>NOW</div>
-      <VerticalTimeline className={'timeline'}>
+        <VerticalTimeline className={'timeline'}>
         <TimeLineElement
           icon={FaSuitcase}
-          title="Software Developer - Eante Pty"
+          title="Software Developer - Conpago"
           location="Brisbane, Australia"
-          date="2019 - Current"
-          text="Help developed several projects, including a blast mining 
+          date="2020 - Current"
+          text="Developing projects using React and React Native, to help care providers increase engagement with the community."></TimeLineElement>
+        <TimeLineElement
+          icon={FaSuitcase}
+          title="Software Developer - Eante"
+          location="Brisbane, Australia"
+          date="2019 - 2020"
+          text="Developed several projects, including a blast mining 
         planning tool with core stack using VueJS, ElectronJS, NodeJS, 
         Firebase and more."></TimeLineElement>
         <TimeLineElement
