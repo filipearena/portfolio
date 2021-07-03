@@ -1,0 +1,79 @@
+[debug] [2021-07-03T02:03:13.557Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:03:13.562Z] Command:       /Users/filipearena/.nvm/versions/node/v10.15.0/bin/node /usr/local/bin/firebase serve
+[debug] [2021-07-03T02:03:13.563Z] CLI Version:   8.2.0
+[debug] [2021-07-03T02:03:13.563Z] Platform:      darwin
+[debug] [2021-07-03T02:03:13.563Z] Node Version:  v10.15.0
+[debug] [2021-07-03T02:03:13.574Z] Time:          Sat Jul 03 2021 12:03:13 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-07-03T02:03:13.575Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:03:13.575Z] 
+[debug] [2021-07-03T02:03:13.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-03T02:03:13.795Z] > authorizing via signed-in user
+[debug] [2021-07-03T02:03:13.796Z] [iam] checking project portfolio-22eb7 for permissions ["firebase.projects.get"]
+[debug] [2021-07-03T02:03:13.801Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-03T02:03:13.801Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-03T02:03:14.335Z] <<< HTTP RESPONSE 200 {"date":"Sat, 03 Jul 2021 02:03:14 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T02:03:14.365Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-22eb7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-03T02:03:14.899Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:03:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=201","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T02:03:14.901Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7  
+ 
+[debug] [2021-07-03T02:03:15.700Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:03:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/filipearena/Portfolio/filipearena'...
+[info] 
+[debug] [2021-07-03T02:03:15.715Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7/webApps/-/config  
+ 
+[debug] [2021-07-03T02:03:17.245Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:03:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[filipearena]: Serving hosting files from: build
+[info] ✔  hosting[filipearena]: Local server: http://localhost:5000
+[debug] [2021-07-03T02:05:06.307Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:05:06.310Z] Command:       /Users/filipearena/.nvm/versions/node/v10.15.0/bin/node /usr/local/bin/firebase serve
+[debug] [2021-07-03T02:05:06.311Z] CLI Version:   8.2.0
+[debug] [2021-07-03T02:05:06.311Z] Platform:      darwin
+[debug] [2021-07-03T02:05:06.311Z] Node Version:  v10.15.0
+[debug] [2021-07-03T02:05:06.311Z] Time:          Sat Jul 03 2021 12:05:06 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-07-03T02:05:06.311Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:05:06.312Z] 
+[debug] [2021-07-03T02:05:06.341Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-03T02:05:06.342Z] > authorizing via signed-in user
+[debug] [2021-07-03T02:05:06.343Z] [iam] checking project portfolio-22eb7 for permissions ["firebase.projects.get"]
+[debug] [2021-07-03T02:05:06.349Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-22eb7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-03T02:05:06.912Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:05:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=192","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T02:05:06.914Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7  
+ 
+[debug] [2021-07-03T02:05:07.591Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:05:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/filipearena/Portfolio/filipearena'...
+[info] 
+[debug] [2021-07-03T02:05:07.595Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7/webApps/-/config  
+ 
+[debug] [2021-07-03T02:05:09.029Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:05:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[filipearena]: Serving hosting files from: build
+[info] ✔  hosting[filipearena]: Local server: http://localhost:5000
+[debug] [2021-07-03T02:08:39.644Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:08:39.646Z] Command:       /Users/filipearena/.nvm/versions/node/v10.15.0/bin/node /usr/local/bin/firebase serve
+[debug] [2021-07-03T02:08:39.646Z] CLI Version:   8.2.0
+[debug] [2021-07-03T02:08:39.647Z] Platform:      darwin
+[debug] [2021-07-03T02:08:39.647Z] Node Version:  v10.15.0
+[debug] [2021-07-03T02:08:39.652Z] Time:          Sat Jul 03 2021 12:08:39 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-07-03T02:08:39.652Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T02:08:39.652Z] 
+[debug] [2021-07-03T02:08:39.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-03T02:08:39.666Z] > authorizing via signed-in user
+[debug] [2021-07-03T02:08:39.666Z] [iam] checking project portfolio-22eb7 for permissions ["firebase.projects.get"]
+[debug] [2021-07-03T02:08:39.671Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-22eb7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-03T02:08:41.208Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:08:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=995","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-03T02:08:41.210Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7  
+ 
+[debug] [2021-07-03T02:08:42.018Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:08:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from '/Users/filipearena/Portfolio/filipearena'...
+[info] 
+[debug] [2021-07-03T02:08:42.023Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-22eb7/webApps/-/config  
+ 
+[debug] [2021-07-03T02:08:43.509Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 03 Jul 2021 02:08:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[filipearena]: Serving hosting files from: build
+[info] ✔  hosting[filipearena]: Local server: http://localhost:5000
