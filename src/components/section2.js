@@ -27,7 +27,7 @@ export default function Section2() {
           icon={FaGraduationCap}
           title="Masters of Information Technology (QUT)"
           location="Brisbane, Australia"
-          date="2019 - Current"
+          date="2019 - 2021"
           text="Moved to Brisbane, Australia to start a Masters of Information Technology at QUT">
         </TimeLineElement>
         <TimeLineElement
