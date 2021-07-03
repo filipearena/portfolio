@@ -7,7 +7,7 @@ export default function Presentation() {
         Hello, I'm Filipe Arena
       </h1>
       <h3 className="description animate">
-        <i>an experienced <u>Software Developer</u> who has learned the value of hard work,
+        <i>an experienced <u>Software Engineer</u> who has learned the value of hard work,
         attention to detail and dedication along the years.</i>
       </h3>
     </div >
