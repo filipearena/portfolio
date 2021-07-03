@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import PDF from "../assets/cv"
+import PDF from "../assets/cv.pdf"
 import { IoMdCloudDownload } from 'react-icons/io';
 
 export default function DownloadResume() {
