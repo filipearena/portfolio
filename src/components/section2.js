@@ -11,10 +11,16 @@ export default function Section2() {
         <VerticalTimeline className={'timeline'}>
         <TimeLineElement
           icon={FaSuitcase}
+          title="Software Engineer - Technlogy One"
+          location="Brisbane, Australia"
+          date="2021 - Current"
+          text="Developing mobile project using React Native, making sure clients can access features even without internet."></TimeLineElement>
+        <TimeLineElement
+          icon={FaSuitcase}
           title="Software Engineer - Conpago"
           location="Brisbane, Australia"
-          date="2020 - Current"
-          text="Developing projects using React and React Native, to help care providers increase engagement with the community."></TimeLineElement>
+          date="2020 - 2021"
+          text="Developed projects using React and React Native, to help care providers increase engagement with the community."></TimeLineElement>
         <TimeLineElement
           icon={FaSuitcase}
           title="Software Engineer - Eante"
